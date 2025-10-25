@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo" data-translate="siteTitle">Explore the World</div>
+            <nav>
+                <ul>
+                    <li><a href="#" data-translate="navHome">Home</a></li>
+                    <li><a href="#destinations" data-translate="navDestinations">Destinations</a></li>
+                    <li><a href="#" data-translate="navAbout">About</a></li>
+                    <li><a href="contact.html" data-translate="navContact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <button onclick="changeLanguage('en')" id="btn-en" class="active">EN</button>
+                <button onclick="changeLanguage('al')" id="btn-al">AL</button>
+            </div>
+        </div>
+    </header>
+
+        
+    <section class="contact-section" id="contact">
+        <h2 data-translate="contactTitle">Get in Touch</h2>
+        <p class="contact-subtitle" data-translate="contactSubtitle">
+            We'd love to hear from you! Send us a message or follow us on social media.
+        </p>
+
+        <div class="contact-container">
+      
+            <form class="contact-form" onsubmit="sendMessage(event)">
+                <label for="name" data-translate="contactNameLabel">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email" data-translate="contactEmailLabel">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message" data-translate="contactMessageLabel">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" data-translate="contactButton">Send Message</button>
+            </form>
+
+       
+            <div class="contact-info">
+                <h3 data-translate="contactInfoTitle">Contact Information</h3>
+                <p><strong>Email:</strong> info@exploretheworld.com</p>
+                <p><strong data-translate="contactAddressLabel">Address:</strong>
+                   <span data-translate="contactAddress">
+                    <li>Tiran, Albania</li>
+                    <li>Paris, France</li>
+                    <li>Rome, Italy</li>
+                    <li>Tokyo, Japan</li>
+                    <li>Washington, USA</li>
+                   </span></p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

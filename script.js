@@ -11,6 +11,14 @@ const translations = {
         selectCountry: "Select a Country:",
         destinationsTitle: "Top Destinations",
         selectCountryPrompt: "Please select a country to see destinations",
+        contactTitle: "Get in Touch",
+        contactSubtitle: "We'd love to hear from you! Send us a message or follow us on social media.",
+        contactNameLabel: "Your Name:",
+        contactEmailLabel: "Your Email:",
+        contactMessageLabel: "Your Message:",
+        contactButton: "Send Message",
+        contactInfoTitle: "Contact Information",
+        contactAddress: "Tirana, Albania",
         copyright: "© 2025 Explore the World. All rights reserved."
     },
     al: {
@@ -24,6 +32,14 @@ const translations = {
         selectCountry: "Zgjidhni një Vend:",
         destinationsTitle: "Destinacionet Kryesore",
         selectCountryPrompt: "Ju lutemi zgjidhni një vend për të parë destinacionet",
+        contactTitle: "Na Kontaktoni",
+        contactSubtitle: "Ne do të donim të dëgjonim nga ju! Na dërgoni një mesazh ose ndiqni në rrjetet sociale.",
+        contactNameLabel: "Emri Juaj:",
+        contactEmailLabel: "Email-i Juaj:",
+        contactMessageLabel: "Mesazhi Juaj:",
+        contactButton: "Dërgo Mesazhin",
+        contactInfoTitle: "Informacion Kontakti",
+        contactAddress: "Tirana, Shqipëri",
         copyright: "© 2025 Eksploro Botën. Të gjitha të drejtat e rezervuara."
     }
 };
@@ -297,3 +313,38 @@ function showDestinations() {
         </div>
     `).join('');
 }
+
+function validateForm() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+        alert("Please fill in all fields.");
+        return false;
+    }
+    alert("Thank you for contacting us! We'll get back to you soon.");
+    return true;
+}
+
+
+
+function sendMessage(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (name && email && message) {
+        alert(currentLanguage === 'en'
+            ? `Thank you, ${name}! Your message has been sent.`)
+           
+        event.target.reset();
+    } else {
+        alert(currentLanguage === 'en'
+            ? 'Please fill in all fields.')
+            
+    }
+}
+
