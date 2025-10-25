@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the World | Eksploro Botën</title>
+    <meta name="description" content="Discover amazing travel destinations around the world in English and Albanian">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo" data-translate="siteTitle">Explore the World</div>
+            <nav>
+                <ul>
+                    <li><a href="#" data-translate="navHome">Home</a></li>
+                    <li><a href="#destinations" data-translate="navDestinations">Destinations</a></li>
+                    <li><a href="#" data-translate="navAbout">About</a></li>
+                    <li><a href="#" data-translate="navContact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <button onclick="changeLanguage('en')" id="btn-en" class="active">EN</button>
+                <button onclick="changeLanguage('al')" id="btn-al">AL</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 data-translate="heroTitle">Discover Amazing Destinations</h1>
+        <p data-translate="heroSubtitle">Explore the world's most beautiful places</p>
+        
+        <div class="country-selector">
+            <label for="country-select" data-translate="selectCountry">Select a Country:</label>
+            <select id="country-select" onchange="showDestinations()">
+                <option value="">-- Choose a country --</option>
+                <option value="italy">Italy</option>
+                <option value="france">France</option>
+                <option value="japan">Japan</option>
+                <option value="albania">Albania</option>
+                <option value="usa">USA</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations-section" id="destinations">
+        <h2 data-translate="destinationsTitle">Top Destinations</h2>
+        <div class="destinations-grid" id="destinations-container">
+            <p style="text-align: center; color: #64748b;" data-translate="selectCountryPrompt">Please select a country to see destinations</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+        <p data-translate="copyright">© 2025 Explore the World. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
