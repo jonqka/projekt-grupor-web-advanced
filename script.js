@@ -35,7 +35,7 @@ const destinations = {
             {
                 name: "Rome",
                 description: "Ancient capital with iconic landmarks like the Colosseum and Vatican City.",
-                image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600"
+                image: "img/rome.jpg"
             },
             {
                 name: "Venice",
@@ -45,19 +45,29 @@ const destinations = {
             {
                 name: "Florence",
                 description: "Renaissance art capital with stunning architecture and museums.",
-                image: "https://images.unsplash.com/photo-1541412093808-76b2e9ddcc57?w=600"
+                image: "img/florence.jpg"
             },
             {
                 name: "Amalfi Coast",
                 description: "Breathtaking coastal region with colorful villages and dramatic cliffs.",
-                image: "https://images.unsplash.com/photo-1558504032-8c0a7a1e4e05?w=600"
+                image: "img/amalfi-coast.jpg"
+            },
+            {
+                name: "Colosseum",
+                description: "Iconic ancient amphitheater in Rome, symbol of the Roman Empire.",
+                image: "img/coloseum.jpg"
+            },
+            {
+                name: "Pantheon",
+                description: "Ancient Roman temple with a remarkable dome and historical significance.",
+                image: "img/pantheon.jpg"
             }
         ],
         al: [
             {
                 name: "Roma",
                 description: "Kryeqyteti i lashtë me monumente ikonike si Koloseu dhe Vatikani.",
-                image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600"
+                image: "img/rome.jpg"
             },
             {
                 name: "Venecia",
@@ -67,12 +77,22 @@ const destinations = {
             {
                 name: "Florenca",
                 description: "Kryeqyteti i artit të Rilindjes me arkitekturë dhe muze mahnitëse.",
-                image: "https://images.unsplash.com/photo-1541412093808-76b2e9ddcc57?w=600"
+                image: "img/florence.jpg"
             },
             {
                 name: "Bregu i Amalfit",
                 description: "Rajon bregdetar mahnitës me fshatra shumëngjyrëshe dhe shkëmbinj dramatikë.",
-                image: "https://images.unsplash.com/photo-1558504032-8c0a7a1e4e05?w=600"
+                image: "img/amalfi-coast.jpg"
+            },
+            {
+                name: "Koloseu",
+                description: "Amfiteatri ikonik i lashtë në Romë, simbol i Perandorisë Romake.",
+                image: "img/coloseum.jpg"
+            },
+            {
+                name: "Panteoni",
+                description: "Tempulli i lashtë romak me kupolë mahnitëse dhe rëndësi historike.",
+                image: "img/pantheon.jpg"
             }
         ]
     },
@@ -91,7 +111,22 @@ const destinations = {
             {
                 name: "Nice",
                 description: "Beautiful French Riviera city with stunning beaches and promenades.",
-                image: "https://images.unsplash.com/photo-1523755231516-e43fd2e8dca5?w=600"
+                image: "https://images.unsplash.com/photo-1643914729809-4aa59fdc4c17?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
+            },
+            {
+                name: "Louvre Museum",
+                description: "World-famous art museum housing the Mona Lisa and countless masterpieces.",
+                image: "img/louvre.jpg"
+            },
+            {
+                name: "Arc de Triomphe",
+                description: "Iconic triumphal arch in Paris, symbol of French military victories.",
+                image: "img/arc-de-triomphe.jpg"
+            },
+            {
+                name: "Disneyland Paris",
+                description: "Magical theme park with Disney characters, rides, and entertainment.",
+                image: "img/disneyland-paris.jpg"
             }
         ],
         al: [
@@ -109,6 +144,21 @@ const destinations = {
                 name: "Nica",
                 description: "Qytet i bukur i Rivierës Franceze me plazhe mahnitëse dhe shëtitore.",
                 image: "https://images.unsplash.com/photo-1523755231516-e43fd2e8dca5?w=600"
+            },
+            {
+                name: "Muzeu Louvre",
+                description: "Muzeu i artit botërorisht i famshëm që strehon Mona Lisën dhe mijëra vepra kryemaster.",
+                image: "img/louvre.jpg"
+            },
+            {
+                name: "Harku i Triumfit",
+                description: "Harku triumfal ikonik në Paris, simbol i fitoreve ushtarake franceze.",
+                image: "img/arc-de-triomphe.jpg"
+            },
+            {
+                name: "Disneyland Paris",
+                description: "Parku magjik tematik me personazhe Disney, karusela dhe argëtim.",
+                image: "img/disneyland-paris.jpg"
             }
         ]
     },
