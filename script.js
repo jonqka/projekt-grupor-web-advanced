@@ -338,13 +338,13 @@ function sendMessage(event) {
 
     if (name && email && message) {
         alert(currentLanguage === 'en'
-            ? `Thank you, ${name}! Your message has been sent.`)
-           
+            ? `Thank you, ${name}! Your message has been sent.`
+            : `Faleminderit, ${name}! Mesazhi juaj u dërgua me sukses.`);
         event.target.reset();
     } else {
         alert(currentLanguage === 'en'
-            ? 'Please fill in all fields.')
-            
+            ? 'Please fill in all fields.'
+            : 'Ju lutemi plotësoni të gjitha fushat.');
     }
 }
 
