@@ -91,7 +91,7 @@ const destinations = {
             {
                 name: "Nice",
                 description: "Beautiful French Riviera city with stunning beaches and promenades.",
-                image: "https://images.unsplash.com/photo-1523755231516-e43fd2e8dca5?w=600"
+                image: "https://images.unsplash.com/photo-1643914729809-4aa59fdc4c17?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
             }
         ],
         al: [
