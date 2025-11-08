@@ -1,4 +1,4 @@
-// Translations
+
 const translations = {
     en: {
         siteTitle: "Explore the World",
@@ -13,6 +13,7 @@ const translations = {
         selectCountryPrompt: "Please select a country to see destinations",
         copyright: "© 2025 Explore the World. All rights reserved.",
         aboutHeading: "About Us",
+        aboutParagraph: "At our travel agency, we believe that travel is more than just visiting new places—it’s about creating stories, discovering yourself, and connecting with the world in meaningful ways. Founded by a team of passionate explorers, storytellers, and travel experts, our mission is to inspire people to see the world differently and make every journey unforgettable. We know that no two travelers are the same, which is why we focus on crafting experiences that are as unique as you are. Whether you crave the serenity of a tropical island, the excitement of bustling city streets, or the wonder of hidden cultural gems, we’re here to guide you every step of the way.",
         foundersTitle: "Our Founders",
         f1_name: "Ana Silva",
         f1_role: "Co‑Founder & CEO",
@@ -40,6 +41,7 @@ const translations = {
         selectCountryPrompt: "Ju lutemi zgjidhni një vend për të parë destinacionet",
         copyright: "© 2025 Eksploro Botën. Të gjitha të drejtat e rezervuara.",
         aboutHeading: "Rreth Nesh",
+        aboutParagraph: "Në agjencinë tonë të udhëtimit, besojmë se udhëtimi është më shumë se thjesht të vizitosh vende të reja—është krijimi i historive, zbulimi i vetvetes dhe lidhja me botën në mënyra të qëndrueshme dhe domethënëse. E themeluar nga një ekip eksploruesish, rrëfimtarësh dhe ekspertësh të udhëtimeve, misioni ynë është të inspirojmë njerëzit të shohin botën ndryshe dhe të bëjnë çdo udhëtim të paharrueshëm. Ne e dimë që asnjë udhëtar nuk është i njëjtë, prandaj fokusohemi në krijimin e përvojave aq të veçanta sa jeni ju. Qoftë që kërkoni qetësinë e një ishulli tropikal, emocionin e rrugëve të zëna të qytetit, apo çuditë e thesareve kulturore të fshehura, ne jemi këtu për t'ju udhëhequr në çdo hap.",
         foundersTitle: "Themeltuesit Tanë",
         f1_name: "Ana Silva",
         f1_role: "Bashkë‑themeluese & Drejtuese Ekzekutive",
@@ -58,40 +60,42 @@ const translations = {
 
 
 
-// Current language
+
 let currentLanguage = localStorage.getItem('language') || 'en';
 
-// Initialize on page load
+
 document.addEventListener('DOMContentLoaded', function() {
     changeLanguage(currentLanguage);
 });
 
-// Change language function
+
 function changeLanguage(lang) {
     currentLanguage = lang;
     localStorage.setItem('language', lang);
 
-    // Update button states
-    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-    document.getElementById('btn-al').classList.toggle('active', lang === 'al');
+ 
+    const btnEn = document.getElementById('btn-en');
+    const btnAl = document.getElementById('btn-al');
+    if (btnEn) btnEn.classList.toggle('active', lang === 'en');
+    if (btnAl) btnAl.classList.toggle('active', lang === 'al');
 
-    // Update all translatable elements (textContent)
+   
     document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
-        if (translations[lang] && translations[lang][key]) {
-            element.textContent = translations[lang][key];
+        if (translations[lang] && translations[lang][key] !== undefined) {
+            element.innerHTML = translations[lang][key];
         }
     });
 
-    // Update attributes like alt when data-translate-alt is present
+  
     document.querySelectorAll('[data-translate-alt]').forEach(element => {
         const key = element.getAttribute('data-translate-alt');
-        if (translations[lang] && translations[lang][key]) {
+        if (translations[lang] && translations[lang][key] !== undefined) {
             element.alt = translations[lang][key];
         }
     });
 
-    // Refresh destinations if a country is selected
+
     const countrySelect = document.getElementById('country-select');
     const selectedCountry = countrySelect ? countrySelect.value : '';
     if (selectedCountry) {
@@ -99,7 +103,7 @@ function changeLanguage(lang) {
     }
 }
 
-// Show destinations for selected country
+
 function showDestinations() {
     const countrySelect = document.getElementById('country-select');
     const country = countrySelect.value;

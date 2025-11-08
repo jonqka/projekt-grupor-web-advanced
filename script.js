@@ -35,7 +35,7 @@ const destinations = {
             {
                 name: "Rome",
                 description: "Ancient capital with iconic landmarks like the Colosseum and Vatican City.",
-                image: "img/rome.jpg"
+                image: "https://images.unsplash.com/photo-1529260830199-42c24126f198?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1176"
             },
             {
                 name: "Venice",
@@ -45,29 +45,29 @@ const destinations = {
             {
                 name: "Florence",
                 description: "Renaissance art capital with stunning architecture and museums.",
-                image: "img/florence.jpg"
+                image: "https://images.unsplash.com/photo-1476362174823-3a23f4aa6d76?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
             },
             {
                 name: "Amalfi Coast",
                 description: "Breathtaking coastal region with colorful villages and dramatic cliffs.",
-                image: "img/amalfi-coast.jpg"
+                image: "img/amalfi-coast.jpghttps://images.unsplash.com/photo-1612698093158-e07ac200d44e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
             },
             {
                 name: "Colosseum",
                 description: "Iconic ancient amphitheater in Rome, symbol of the Roman Empire.",
-                image: "img/coloseum.jpg"
+                image: "https://plus.unsplash.com/premium_photo-1675975706513-9daba0ec12a8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
             },
             {
                 name: "Pantheon",
                 description: "Ancient Roman temple with a remarkable dome and historical significance.",
-                image: "img/pantheon.jpg"
+                image: "https://images.unsplash.com/photo-1693824113672-c288819f3724?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1169"
             }
         ],
         al: [
             {
                 name: "Roma",
                 description: "Kryeqyteti i lashtë me monumente ikonike si Koloseu dhe Vatikani.",
-                image: "img/rome.jpg"
+                image: "https://images.unsplash.com/photo-1529260830199-42c24126f198?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1176"
             },
             {
                 name: "Venecia",
@@ -77,7 +77,7 @@ const destinations = {
             {
                 name: "Florenca",
                 description: "Kryeqyteti i artit të Rilindjes me arkitekturë dhe muze mahnitëse.",
-                image: "img/florence.jpg"
+                image: "https://images.unsplash.com/photo-1476362174823-3a23f4aa6d76?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
             },
             {
                 name: "Bregu i Amalfit",

@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Explore the World | Contact</title>
+    <meta name="description" content="Contact Explore the World — available in English and Albanian">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="contact.css">
+    
 </head>
 <body>
 
@@ -12,9 +21,9 @@
             <div class="logo" data-translate="siteTitle">Explore the World</div>
             <nav>
                 <ul>
-                    <li><a href="#" data-translate="navHome">Home</a></li>
+                    <li><a href="projekti.html" data-translate="navHome">Home</a></li>
                     <li><a href="#destinations" data-translate="navDestinations">Destinations</a></li>
-                    <li><a href="#" data-translate="navAbout">About</a></li>
+                    <li><a href="about.html" data-translate="navAbout">About</a></li>
                     <li><a href="contact.html" data-translate="navContact">Contact</a></li>
                 </ul>
             </nav>
@@ -51,17 +60,28 @@
             <div class="contact-info">
                 <h3 data-translate="contactInfoTitle">Contact Information</h3>
                 <p><strong>Email:</strong> info@exploretheworld.com</p>
-                <p><strong data-translate="contactAddressLabel">Address:</strong>
-                   <span data-translate="contactAddress">
-                    <li>Tiran, Albania</li>
-                    <li>Paris, France</li>
-                    <li>Rome, Italy</li>
-                    <li>Tokyo, Japan</li>
-                    <li>Washington, USA</li>
-                   </span></p>
+
+                
+                <p><strong data-translate="contactAddressLabel">Address:</strong></p>
+                <ul class="contact-address" data-translate="contactAddress"></ul>
+
+                <!-- Map block: Tirana, Albania -->
+                <h4 class="map-title" data-translate="contactMapTitle">Our Location</h4>
+                <div class="map-wrapper">
+                    <iframe
+                        class="contact-map-iframe"
+                        src="https://www.google.com/maps?q=Tirana+Albania&z=14&output=embed"
+                        data-translate-title="contactMapIframeTitle"
+                        title="Map of Tirana, Albania"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        aria-label="Map showing Tirana, Albania"
+                    ></iframe>
+                </div>
             </div>
         </div>
     </section>
 
+        <script src="contact.js"></script>
 </body>
 </html>

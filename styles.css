@@ -5,19 +5,20 @@
 }
 
 :root {
-    --primary: #2563eb;
-    --primary-dark: #1e40af;
-    --secondary: #8b5cf6;
-    --background: #ffffff;
-    --surface: #f8fafc;
-    --text: #1e293b;
-    --text-light: #64748b;
-    --border: #e2e8f0;
-    --shadow: rgba(0, 0, 0, 0.1);
+    --primary: #8B5E3C;        /* warm cocoa */
+    --primary-dark: #5C3A21;   /* deep brown */
+    --secondary: #C99A6B;      /* soft gold */
+    --accent: #B67B4A;         /* accent for highlights */
+    --background: #FBF7F3;     /* warm off-white */
+    --surface: #F7EEE7;        /* gentle surface */
+    --text: #3B2F2F;           /* dark warm text */
+    --text-light: #6B5A52;     /* muted text */
+    --border: #E6D8CE;         /* soft border */
+    --shadow: rgba(59, 47, 47, 0.06);
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Red Hat Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
     color: var(--text);
     background-color: var(--background);
@@ -95,7 +96,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(37, 99, 235, 0.7), rgba(139, 92, 246, 0.7)),
+    background: linear-gradient(rgba(139,94,60,0.72), rgba(83, 53, 22, 0.65)),
                 url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200') center/cover;
     color: white;
     padding: 4rem 2rem;
@@ -228,6 +229,20 @@ footer {
 .social-links a:hover {
     color: var(--secondary);
 }
+
+.logo,
+.hero h1,
+.abouth2,
+h1, h2, h3,
+.founder-name,
+.founder-role,
+.founders h2 {
+  font-family: 'Instrument Serif', serif;
+  /* adjust weight/spacing if desired */
+  font-weight: 400;
+  line-height: 1.15;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
