@@ -50,7 +50,7 @@ const destinations = {
             {
                 name: "Amalfi Coast",
                 description: "Breathtaking coastal region with colorful villages and dramatic cliffs.",
-                image: "img/amalfi-coast.jpghttps://images.unsplash.com/photo-1612698093158-e07ac200d44e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+                image: "https://images.unsplash.com/photo-1612698093158-e07ac200d44e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
             },
             {
                 name: "Colosseum",
@@ -82,17 +82,17 @@ const destinations = {
             {
                 name: "Bregu i Amalfit",
                 description: "Rajon bregdetar mahnitës me fshatra shumëngjyrëshe dhe shkëmbinj dramatikë.",
-                image: "img/amalfi-coast.jpg"
+                image: "https://images.unsplash.com/photo-1612698093158-e07ac200d44e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
             },
             {
                 name: "Koloseu",
                 description: "Amfiteatri ikonik i lashtë në Romë, simbol i Perandorisë Romake.",
-                image: "img/coloseum.jpg"
+                image: "https://plus.unsplash.com/premium_photo-1675975706513-9daba0ec12a8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
             },
             {
                 name: "Panteoni",
                 description: "Tempulli i lashtë romak me kupolë mahnitëse dhe rëndësi historike.",
-                image: "img/pantheon.jpg"
+                image: "https://images.unsplash.com/photo-1693824113672-c288819f3724?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1169"
             }
         ]
     },
@@ -116,17 +116,17 @@ const destinations = {
             {
                 name: "Louvre Museum",
                 description: "World-famous art museum housing the Mona Lisa and countless masterpieces.",
-                image: "img/louvre.jpg"
+                image: "https://images.unsplash.com/photo-1587648415693-4a5362b2ce41?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1632"
             },
             {
                 name: "Arc de Triomphe",
                 description: "Iconic triumphal arch in Paris, symbol of French military victories.",
-                image: "img/arc-de-triomphe.jpg"
+                image: "https://images.unsplash.com/photo-1694286433612-cdc3d0c58608?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1025"
             },
             {
                 name: "Disneyland Paris",
                 description: "Magical theme park with Disney characters, rides, and entertainment.",
-                image: "img/disneyland-paris.jpg"
+                image: "https://images.unsplash.com/photo-1690097232120-a59669ee0989?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1632"
             }
         ],
         al: [
@@ -143,22 +143,22 @@ const destinations = {
             {
                 name: "Nica",
                 description: "Qytet i bukur i Rivierës Franceze me plazhe mahnitëse dhe shëtitore.",
-                image: "https://images.unsplash.com/photo-1523755231516-e43fd2e8dca5?w=600"
+                image: "https://images.unsplash.com/photo-1643914729809-4aa59fdc4c17?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
             },
             {
                 name: "Muzeu Louvre",
                 description: "Muzeu i artit botërorisht i famshëm që strehon Mona Lisën dhe mijëra vepra kryemaster.",
-                image: "img/louvre.jpg"
+                image: "https://images.unsplash.com/photo-1587648415693-4a5362b2ce41?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1632"
             },
             {
                 name: "Harku i Triumfit",
                 description: "Harku triumfal ikonik në Paris, simbol i fitoreve ushtarake franceze.",
-                image: "img/arc-de-triomphe.jpg"
+                image: "https://images.unsplash.com/photo-1694286433612-cdc3d0c58608?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1025"
             },
             {
                 name: "Disneyland Paris",
                 description: "Parku magjik tematik me personazhe Disney, karusela dhe argëtim.",
-                image: "img/disneyland-paris.jpg"
+                image: "https://images.unsplash.com/photo-1690097232120-a59669ee0989?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1632"
             }
         ]
     },
@@ -182,7 +182,7 @@ const destinations = {
             {
                 name: "Mount Fuji",
                 description: "Iconic snow-capped volcano and Japan's highest mountain.",
-                image: "https://images.unsplash.com/photo-1576675784201-9710d2c0e18d?w=600"
+                image: "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171"
             }
         ],
         al: [
@@ -204,7 +204,7 @@ const destinations = {
             {
                 name: "Mali Fuji",
                 description: "Vullkani ikonik i mbuluar me borë dhe mali më i lartë i Japonisë.",
-                image: "https://images.unsplash.com/photo-1576675784201-9710d2c0e18d?w=600"
+                image: "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171"
             }
         ]
     },
@@ -213,44 +213,44 @@ const destinations = {
             {
                 name: "Saranda",
                 description: "Beautiful coastal town with crystal-clear waters and stunning beaches.",
-                image: "https://images.unsplash.com/photo-1599417579961-86c8c30e2e95?w=600"
+                image: "https://images.unsplash.com/photo-1742244002755-067b34f9f1c6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
             },
             {
                 name: "Berat",
                 description: "UNESCO World Heritage city known as 'City of a Thousand Windows'.",
-                image: "https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=600"
+                image: "https://images.unsplash.com/photo-1705405999485-188af37e0462?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171"
             },
             {
                 name: "Tirana",
                 description: "Vibrant capital city with colorful buildings and rich history.",
-                image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600"
+                image: "https://images.unsplash.com/photo-1742500481926-f61a4be9abfe?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1082"
             },
             {
                 name: "Gjirokastër",
                 description: "Historic stone city with a magnificent Ottoman-era castle.",
-                image: "https://images.unsplash.com/photo-1584466977773-e625c37cdd50?w=600"
+                image: "https://images.unsplash.com/photo-1630339858071-4e64cc76fb6c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
             }
         ],
         al: [
             {
                 name: "Saranda",
                 description: "Qytet i bukur bregdetar me ujëra kristal dhe plazhe mahnitëse.",
-                image: "https://images.unsplash.com/photo-1599417579961-86c8c30e2e95?w=600"
+                image: "https://images.unsplash.com/photo-1742244002755-067b34f9f1c6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
             },
             {
                 name: "Berati",
                 description: "Qytet nën mbrojtjen e UNESCO-s i njohur si 'Qyteti i Një Mijë Dritareve'.",
-                image: "https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=600"
+                image: "https://images.unsplash.com/photo-1705405999485-188af37e0462?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171"
             },
             {
                 name: "Tirana",
                 description: "Kryeqyteti dinamik me ndërtesa shumëngjyrëshe dhe histori të pasur.",
-                image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600"
+                image: "https://images.unsplash.com/photo-1742500481926-f61a4be9abfe?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1082"
             },
             {
                 name: "Gjirokastra",
                 description: "Qytet historik prej guri me një kështjellë madhështore nga epoka osmane.",
-                image: "https://images.unsplash.com/photo-1584466977773-e625c37cdd50?w=600"
+                image: "https://images.unsplash.com/photo-1630339858071-4e64cc76fb6c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
             }
         ]
     },
