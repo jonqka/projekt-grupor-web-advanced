@@ -35,19 +35,30 @@
 
   
     <section class="hero">
-        <h1 data-translate="heroTitle">Discover Amazing Destinations</h1>
-        <p data-translate="heroSubtitle">Explore the world's most beautiful places</p>
-        
-        <div class="country-selector">
-            <label for="country-select" data-translate="selectCountry">Select a Country:</label>
-            <select id="country-select" onchange="showDestinations()">
-                <option value="">-- Choose a country --</option>
-                <option value="italy">Italy</option>
-                <option value="france">France</option>
-                <option value="japan">Japan</option>
-                <option value="albania">Albania</option>
-                <option value="usa">USA</option>
-            </select>
+        <div class="hero-video-wrap" aria-hidden="true">
+            <video id="hero-video" autoplay muted loop playsinline poster="images/hero-poster.jpg">
+                <source src="videos/hero-bg.mp4" type="video/mp4">
+                <!-- fallback poster will show if video unsupported -->
+            </video>
+        </div>
+
+        <div class="hero-inner">
+            <h1 data-translate="heroTitle">Discover Amazing Destinations</h1>
+            <p data-translate="heroSubtitle">Explore the world's most beautiful places</p>
+
+            <!-- <div class="country-selector">
+                <div class="country-content">
+                    <label for="country-select" data-translate="selectCountry">Select a Country:</label>
+                    <select id="country-select" onchange="showDestinations()">
+                        <option value="">-- Choose a country --</option>
+                        <option value="italy">Italy</option>
+                        <option value="france">France</option>
+                        <option value="japan">Japan</option>
+                        <option value="albania">Albania</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+            </div> -->
         </div>
     </section>
 
@@ -60,43 +71,63 @@
  
     <section id="founders" class="founders" aria-labelledby="founders-title">
       <div class="container">
-        <h2 id="founders-title" data-translate="foundersTitle">Our Founders</h2>
+        <h2 id="founders-title" data-translate="foundersTitle">Book Your Next Trip</h2>
 
         <div class="founder-grid">
           <article class="founder-card" aria-labelledby="f1-name">
-            <img src="https://plus.unsplash.com/premium_photo-1681489930334-b0d26fdb9ed8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" data-translate-alt="f1_alt" alt="Photo of Ana Silva" class="founder-photo">
-            <h3 id="f1-name" class="founder-name" data-translate="f1_name">Ana Silva</h3>
-            <div class="founder-role" data-translate="f1_role">Co‑Founder & CEO</div>
-            <p class="founder-bio" data-translate="f1_bio">Ana is a world traveler and former travel writer who specializes in immersive cultural experiences and sustainable tourism.</p>
+            <img src="https://images.unsplash.com/photo-1582880421648-a7154a8c99c1?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-translate-alt="f1_alt" alt="Photo of Ana Silva" class="founder-photo">
+            <h3 id="f1-name" class="founder-name" data-translate="f1_name">Honeymoons</h3>
+            <div class="founder-role" data-translate="f1_role"></div>
+            <p class="founder-bio" data-translate="f1_bio">You've already planned the wedding. Why add anything else to your plate?</p>
           </article>
 
           <article class="founder-card" aria-labelledby="f2-name">
-            <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171" data-translate-alt="f2_alt" alt="Photo of Marko Dervishi" class="founder-photo">
-            <h3 id="f2-name" class="founder-name" data-translate="f2_name">Marko Dervishi</h3>
-            <div class="founder-role" data-translate="f2_role">Co‑Founder & CTO</div>
-            <p class="founder-bio" data-translate="f2_bio">Marko builds the tools that help travelers discover the best routes, local guides, and hidden gems around the globe.</p>
+            <img src="https://images.unsplash.com/photo-1511316695145-4992006ffddb?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-translate-alt="f2_alt" alt="Photo of Marko Dervishi" class="founder-photo">
+            <h3 id="f2-name" class="founder-name" data-translate="f2_name">Cruises</h3>
+            <div class="founder-role" data-translate="f2_role"></div>
+            <p class="founder-bio" data-translate="f2_bio">Our Advisors matchmake every sea-bound passenger to the right ship, whether it's your first or fiftieth time on board.</p>
           </article>
 
-          <article class="founder-card" aria-labelledby="f3-name">
-            <img src="https://images.unsplash.com/photo-1701096374092-bb70915fdc5c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" data-translate-alt="f3_alt" alt="Photo of Elira Kola" class="founder-photo">
-            <h3 id="f3-name" class="founder-name" data-translate="f3_name">Elira Kola</h3>
-            <div class="founder-role" data-translate="f3_role">Co‑Founder & Head of Experiences</div>
-            <p class="founder-bio" data-translate="f3_bio">Elira curates unique itineraries and partners with local artisans and guides to create unforgettable trips.</p>
+          <article class="founder-card" aria-labelledby="f3-name"> 
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-translate-alt="f3_alt" alt="Photo of Elira Kola" class="founder-photo">
+            <h3 id="f3-name" class="founder-name" data-translate="f3_name">All-Inclusive Resorts</h3>
+            <div class="founder-role" data-translate="f3_role"></div>
+            <p class="founder-bio" data-translate="f3_bio">Relax, unwind, and leave the details to us. Our all-inclusive packages cover everything from meals to activities.</p>
           </article>
+        </div> <!-- .founder-grid -->
+      </div> <!-- .container -->
+    </section> <!-- #founders -->
+
+    <!-- FAQ Accordion -->
+    <section id="faq" class="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title" data-translate="faqTitle">Frequently Asked Questions</h2>
+
+        <div class="accordion" id="faqs" role="region">
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" data-translate="faq_q1">What is your cancellation policy?</button>
+            <div class="accordion-panel hidden" data-translate="faq_a1">
+              Our cancellation policy depends on the product — please contact support for details.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" data-translate="faq_q2">Do you offer travel insurance?</button>
+            <div class="accordion-panel hidden" data-translate="faq_a2">
+              Yes — we offer optional travel insurance packages at booking.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false" data-translate="faq_q3">Can you handle group bookings?</button>
+            <div class="accordion-panel hidden" data-translate="faq_a3">
+              Absolutely — we specialize in group travel and events. Contact our advisors to get started.
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-  
-    <footer>
-        <div class="social-links">
-            <a href="#" aria-label="Facebook">📘</a>
-            <a href="#" aria-label="Instagram">📷</a>
-            <a href="#" aria-label="Twitter">🐦</a>
-        </div>
-        <p data-translate="copyright">© 2025 Explore the World. All rights reserved.</p>
-    </footer>
-
+    
     <script src="script.js"></script>
 </body>
 </html>

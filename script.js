@@ -1,4 +1,3 @@
-
 const translations = {
     en: {
         siteTitle: "Explore the World",
@@ -12,21 +11,28 @@ const translations = {
         destinationsTitle: "Top Destinations",
         selectCountryPrompt: "Please select a country to see destinations",
         copyright: "© 2025 Explore the World. All rights reserved.",
-        aboutHeading: "About Us",
+        aboutHeading: "",
         aboutParagraph: "At our travel agency, we believe that travel is more than just visiting new places—it’s about creating stories, discovering yourself, and connecting with the world in meaningful ways. Founded by a team of passionate explorers, storytellers, and travel experts, our mission is to inspire people to see the world differently and make every journey unforgettable. We know that no two travelers are the same, which is why we focus on crafting experiences that are as unique as you are. Whether you crave the serenity of a tropical island, the excitement of bustling city streets, or the wonder of hidden cultural gems, we’re here to guide you every step of the way.",
-        foundersTitle: "Our Founders",
-        f1_name: "Ana Silva",
-        f1_role: "Co‑Founder & CEO",
-        f1_bio: "Ana is a world traveler and former travel writer who specializes in immersive cultural experiences and sustainable tourism.",
+        foundersTitle: "Book Your Next",
+        f1_name: "Honeymoons",
+        f1_role: "",
+        f1_bio: "You've already planned the wedding. Why add anything else to your plate?",
         f1_alt: "Photo of Ana Silva",
-        f2_name: "Marko Dervishi",
-        f2_role: "Co‑Founder & CTO",
-        f2_bio: "Marko builds the tools that help travelers discover the best routes, local guides, and hidden gems around the globe.",
-        f2_alt: "Photo of Marko Dervishi",
-        f3_name: "Elira Kola",
-        f3_role: "Co‑Founder & Head of Experiences",
-        f3_bio: "Elira curates unique itineraries and partners with local artisans and guides to create unforgettable trips.",
-        f3_alt: "Photo of Elira Kola"
+        f2_name: "Cruises",
+        f2_role: "",
+        f2_bio: "Our Advisors matchmake every sea-bound passenger to the right ship, whether it's your first or fiftieth time on board.",
+        f2_alt: "",
+        f3_name: "Celebrations & milestones",
+        f3_role: "",
+        f3_bio: "From milestone celebrations to epic get-togethers, Fora makes planning group travel easy. Let an expert advisor bring your vision to life.",
+        f3_alt: "",
+        faqTitle: "Frequently Asked Questions",
+        faq_q1: "What is your cancellation policy?",
+        faq_a1: "Our cancellation policy depends on the product — please contact support for details.",
+        faq_q2: "Do you offer travel insurance?",
+        faq_a2: "Yes — we offer optional travel insurance packages at booking.",
+        faq_q3: "Can you handle group bookings?",
+        faq_a3: "Absolutely — we specialize in group travel and events. Contact our advisors to get started."
     },
     al: {
         siteTitle: "Eksploro Botën",
@@ -40,21 +46,28 @@ const translations = {
         destinationsTitle: "Destinacionet Kryesore",
         selectCountryPrompt: "Ju lutemi zgjidhni një vend për të parë destinacionet",
         copyright: "© 2025 Eksploro Botën. Të gjitha të drejtat e rezervuara.",
-        aboutHeading: "Rreth Nesh",
+        aboutHeading: "",
         aboutParagraph: "Në agjencinë tonë të udhëtimit, besojmë se udhëtimi është më shumë se thjesht të vizitosh vende të reja—është krijimi i historive, zbulimi i vetvetes dhe lidhja me botën në mënyra të qëndrueshme dhe domethënëse. E themeluar nga një ekip eksploruesish, rrëfimtarësh dhe ekspertësh të udhëtimeve, misioni ynë është të inspirojmë njerëzit të shohin botën ndryshe dhe të bëjnë çdo udhëtim të paharrueshëm. Ne e dimë që asnjë udhëtar nuk është i njëjtë, prandaj fokusohemi në krijimin e përvojave aq të veçanta sa jeni ju. Qoftë që kërkoni qetësinë e një ishulli tropikal, emocionin e rrugëve të zëna të qytetit, apo çuditë e thesareve kulturore të fshehura, ne jemi këtu për t'ju udhëhequr në çdo hap.",
-        foundersTitle: "Themeltuesit Tanë",
-        f1_name: "Ana Silva",
-        f1_role: "Bashkë‑themeluese & Drejtuese Ekzekutive",
-        f1_bio: "Ana është udhëtuese e pasionuar dhe gazetare e udhëtimeve, specialiste për përvoja kulturore të thella dhe turizëm të qëndrueshëm.",
-        f1_alt: "Foto e Ana Silva",
-        f2_name: "Marko Dervishi",
-        f2_role: "Bashkë‑themelues & CTO",
-        f2_bio: "Marko krijon mjetet që ndihmojnë udhëtarët të zbulojnë rrugët më të mira, guidat lokale dhe thesaret e fshehura.",
-        f2_alt: "Foto e Marko Dervishi",
-        f3_name: "Elira Kola",
-        f3_role: "Bashkë‑themeluese & Drejtore e Përvojave",
-        f3_bio: "Elira kuruar itinerare unike dhe bashkëpunon me artizanë dhe guida lokale për të krijuar udhëtime të paharrueshme.",
-        f3_alt: "Foto e Elira Kola"
+        foundersTitle: "Rezervo Udhëtimin Tënd Tjetër",
+        f1_name: "Pushimet e Mjaltit",
+        f1_role: "",
+        f1_bio: "Tashmë keni planifikuar dasmën. Pse të shtoni diçka tjetër në listën tuaj?",
+        f1_alt: "Foto e Hënës së Mjaltit",
+        f2_name: "Kruzera",
+        f2_role: "",
+        f2_bio: "Këshilltarët tanë përputhin çdo udhëtar detar me anijen e duhur, qoftë hera e parë apo e pesëdhjeta në bord.",
+        f2_alt: "",
+        f3_name: "Festime & Momente të Rëndësishme",
+        f3_role: "",
+        f3_bio: "Nga festimet kryesore tek takimet e mëdha, ne e bëjmë planifikimin e udhëtimeve në grup të thjeshtë. Lejoni një këshilltar ekspert të realizojë vizionin tuaj.",
+        f3_alt: "",
+        faqTitle: "Pyetjet Më të Shpeshta",
+        faq_q1: "Cili është politika juaj e anulimit?",
+        faq_a1: "Politika jonë e anulimit varet nga produkti — ju lutemi kontaktoni mbështetjen për detaje.",
+        faq_q2: "A ofroni sigurim udhëtimi?",
+        faq_a2: "Po — ne ofrojmë paketat opsionale të sigurimit të udhëtimit gjatë rezervimit.",
+        faq_q3: "A mund të përballeni me rezervime grupore?",
+        faq_a3: "Absolutisht — ne specializohemi në udhëtime dhe ngjarje për grupe. Kontaktoni këshilltarët tanë për të filluar."
     }
 };
 
@@ -131,3 +144,20 @@ function showDestinations() {
     }
 
 }
+
+// Accordion behavior
+document.addEventListener('click', function (e) {
+    const btn = e.target.closest('.accordion-trigger');
+    if (!btn) return;
+
+    const item = btn.parentElement;
+    const panel = item.querySelector('.accordion-panel');
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+
+    // Close all items if you want only one open at a time (optional)
+    // document.querySelectorAll('.accordion-trigger').forEach(t => t.setAttribute('aria-expanded', 'false'));
+    // document.querySelectorAll('.accordion-panel').forEach(p => p.classList.add('hidden'));
+
+    btn.setAttribute('aria-expanded', String(!expanded));
+    if (panel) panel.classList.toggle('hidden', expanded);
+});
