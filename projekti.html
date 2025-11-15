@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore the World | Eksploro Botën</title>
     <meta name="description" content="Discover amazing travel destinations around the world in English and Albanian">
-    <link rel="stylesheet" href="styles.css">
 
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
+    
     <header>
         <div class="header-container">
             <div class="logo" data-translate="siteTitle">Explore the World</div>
             <nav>
                 <ul>
                     <li><a href="projekti.html" data-translate="navHome">Home</a></li>
-                    <li><a href="#" data-translate="navDestinations">Destinations</a></li>
+                    <li><a href="destinations.html" data-translate="navDestinations">Destinations</a></li>
                     <li><a href="about.html" data-translate="navAbout">About</a></li>
                     <li><a href="contact.html" data-translate="navContact">Contact</a></li>
                 </ul>
@@ -32,7 +33,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+  
     <section class="hero">
         <h1 data-translate="heroTitle">Discover Amazing Destinations</h1>
         <p data-translate="heroSubtitle">Explore the world's most beautiful places</p>
@@ -50,15 +51,43 @@
         </div>
     </section>
 
-    <!-- Destinations Section -->
-    <section class="destinations-section" id="destinations">
-        <h2 data-translate="destinationsTitle">Top Destinations</h2>
-        <div class="destinations-grid" id="destinations-container">
-            <p style="text-align: center; color: #64748b;" data-translate="selectCountryPrompt">Please select a country to see destinations</p>
+    <h2 class="abouth2" data-translate="aboutHeading">About Us</h2>
+
+  
+    <p class="aboutp" data-translate="aboutParagraph">At our travel agency, we believe that travel is more than just visiting new places—it’s about creating stories, discovering yourself, and connecting with the world in meaningful ways. Founded by a team of passionate explorers, storytellers, and travel experts, our mission is to inspire people to see the world differently and make every journey unforgettable. We know that no two travelers are the same, which is why we focus on crafting experiences that are as unique as you are. Whether you crave the serenity of a tropical island, the excitement of bustling city streets, or the wonder of hidden cultural gems, we’re here to guide you every step of the way.
+    </p>
+
+ 
+    <section id="founders" class="founders" aria-labelledby="founders-title">
+      <div class="container">
+        <h2 id="founders-title" data-translate="foundersTitle">Our Founders</h2>
+
+        <div class="founder-grid">
+          <article class="founder-card" aria-labelledby="f1-name">
+            <img src="https://plus.unsplash.com/premium_photo-1681489930334-b0d26fdb9ed8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" data-translate-alt="f1_alt" alt="Photo of Ana Silva" class="founder-photo">
+            <h3 id="f1-name" class="founder-name" data-translate="f1_name">Ana Silva</h3>
+            <div class="founder-role" data-translate="f1_role">Co‑Founder & CEO</div>
+            <p class="founder-bio" data-translate="f1_bio">Ana is a world traveler and former travel writer who specializes in immersive cultural experiences and sustainable tourism.</p>
+          </article>
+
+          <article class="founder-card" aria-labelledby="f2-name">
+            <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171" data-translate-alt="f2_alt" alt="Photo of Marko Dervishi" class="founder-photo">
+            <h3 id="f2-name" class="founder-name" data-translate="f2_name">Marko Dervishi</h3>
+            <div class="founder-role" data-translate="f2_role">Co‑Founder & CTO</div>
+            <p class="founder-bio" data-translate="f2_bio">Marko builds the tools that help travelers discover the best routes, local guides, and hidden gems around the globe.</p>
+          </article>
+
+          <article class="founder-card" aria-labelledby="f3-name">
+            <img src="https://images.unsplash.com/photo-1701096374092-bb70915fdc5c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" data-translate-alt="f3_alt" alt="Photo of Elira Kola" class="founder-photo">
+            <h3 id="f3-name" class="founder-name" data-translate="f3_name">Elira Kola</h3>
+            <div class="founder-role" data-translate="f3_role">Co‑Founder & Head of Experiences</div>
+            <p class="founder-bio" data-translate="f3_bio">Elira curates unique itineraries and partners with local artisans and guides to create unforgettable trips.</p>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
+  
     <footer>
         <div class="social-links">
             <a href="#" aria-label="Facebook">📘</a>
