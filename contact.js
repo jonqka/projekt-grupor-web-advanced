@@ -15,12 +15,21 @@ const translations = {
         contactButton: "Send Message",
         contactInfoTitle: "Contact Information",
         contactAddressLabel: "Address:",
+        
         // HTML allowed here for the address list
         contactAddress: "<li>Tirana, Albania</li><li>Paris, France</li><li>Rome, Italy</li><li>Tokyo, Japan</li><li>Washington DC, USA</li>",
         contactSent: "Thanks — your message has been sent.",
         contactSendError: "Please fill in all fields before sending.",
         contactMapTitle: "Find Us",
         contactMapIframeTitle: "Map of Tirana, Albania",
+        faqTitle: "Frequently Asked Questions",
+faqQ1: "How can I book a trip?",
+faqA1: "You can book a trip by contacting us directly or visiting the destinations page.",
+faqQ2: "How long does a response take?",
+faqA2: "Our team usually responds within 24 hours.",
+faqQ3: "Do you help with visas?",
+faqA3: "Yes, we offer assistance with travel documents for selected destinations.",
+
         copyright: "© 2025 Explore the World. All rights reserved."
     },
     al: {
@@ -42,6 +51,14 @@ const translations = {
         contactSendError: "Ju lutem plotësoni të gjitha fushat para dërgimit.",
         contactMapTitle: "Ku jemi",
         contactMapIframeTitle: "Hartë e Tiranës, Shqipëri",
+        faqTitle: "Pyetjet më të shpeshta",
+faqQ1: "Si mund të rezervoj një udhëtim?",
+faqA1: "Mund ta rezervoni duke na kontaktuar ose duke vizituar faqen e destinacioneve.",
+faqQ2: "Sa kohë merr përgjigjja?",
+faqA2: "Zakonisht përgjigjemi brenda 24 orëve.",
+faqQ3: "A ndihmoni me viza?",
+faqA3: "Po, ofrojmë ndihmë me dokumentacion udhëtimi për disa destinacione.",
+
         copyright: "© 2025 Eksploro Botën. Të gjitha të drejtat e rezervuara."
     }
 };
@@ -114,3 +131,35 @@ function sendMessage(event) {
     const form = event.target;
     if (form && typeof form.reset === 'function') form.reset();
 }
+// Simple form handler to avoid errors and show a translated confirmation
+function sendMessage(event) {
+    event.preventDefault();
+    const name = document.getElementById('name')?.value?.trim();
+    const email = document.getElementById('email')?.value?.trim();
+    const message = document.getElementById('message')?.value?.trim();
+
+    if (!name || !email || !message) {
+        alert(translations[currentLanguage].contactSendError);
+        return;
+    }
+
+    alert(translations[currentLanguage].contactSent);
+
+    const form = event.target;
+    if (form && typeof form.reset === 'function') form.reset();
+}
+
+// FAQ Accordion
+document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+        const answer = button.nextElementSibling;
+
+        document.querySelectorAll(".faq-answer").forEach(a => {
+            if (a !== answer) {
+                a.classList.remove("open");
+            }
+        });
+
+        answer.classList.toggle("open");
+    });
+});

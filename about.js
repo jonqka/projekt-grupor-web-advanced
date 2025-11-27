@@ -26,7 +26,21 @@ const translations = {
         f3_name: "Elira Kola",
         f3_role: "Co‑Founder & Head of Experiences",
         f3_bio: "Elira curates unique itineraries and partners with local artisans and guides to create unforgettable trips.",
-        f3_alt: "Photo of Elira Kola"
+        f3_alt: "Photo of Elira Kola",
+                siteTitle: "Explore the World", navHome:"Home", navDestinations:"Destinations", navAbout:"About", navContact:"Contact",
+        heroTitle:"Discover Amazing Destinations", heroSubtitle:"Explore the world's most beautiful places",
+        aboutHeading:"About Us", aboutParagraph:"At our travel agency, we believe travel is more than...",
+        foundersTitle:"Our Founders", f1_name:"Ana Silva", f1_role:"Co‑Founder & CEO", f1_bio:"Ana is a world traveler...", f1_alt:"Photo of Ana Silva",
+        f2_name:"Marko Dervishi", f2_role:"Co‑Founder & CTO", f2_bio:"Marko builds the tools...", f2_alt:"Photo of Marko Dervishi",
+        f3_name:"Elira Kola", f3_role:"Co‑Founder & Head of Experiences", f3_bio:"Elira curates unique itineraries...", f3_alt:"Photo of Elira Kola",
+        timelineTitle:"Our Journey", milestone1:"Company founded by passionate travelers.", milestone2:"Launched first travel app for guided tours.", milestone3:"Expanded services worldwide.",
+        testimonialsTitle:"What Our Travelers Say",
+         testimonialsTitle:"What Our Travelers Say",
+        testimonial1:"Amazing experiences, highly recommend!",
+        testimonial2:"The best travel agency we've ever used!",
+        testimonial3:"Truly unforgettable trips with amazing guides!",
+        faqTitle:"Frequently Asked Questions", faqQ1:"What is your refund policy?", faqA1:"We offer full refunds if canceled 7 days before travel.",
+        faqQ2:"Do you provide travel insurance?", faqA2:"Yes, we have optional insurance packages for all trips."
     },
     al: {
         siteTitle: "Eksploro Botën",
@@ -54,7 +68,21 @@ const translations = {
         f3_name: "Elira Kola",
         f3_role: "Bashkë‑themeluese & Drejtore e Përvojave",
         f3_bio: "Elira kuruar itinerare unike dhe bashkëpunon me artizanë dhe guida lokale për të krijuar udhëtime të paharrueshme.",
-        f3_alt: "Foto e Elira Kola"
+        f3_alt: "Foto e Elira Kola",
+         siteTitle:"Eksploro Botën", navHome:"Kryefaqja", navDestinations:"Destinacionet", navAbout:"Rreth Nesh", navContact:"Kontakti",
+        heroTitle:"Zbulo Destinacione të Mrekullueshme", heroSubtitle:"Eksploro vendet më të bukura të botës",
+        aboutHeading:"Rreth Nesh", aboutParagraph:"Në agjencinë tonë të udhëtimit, besojmë se udhëtimi është më shumë...",
+        foundersTitle:"Themeltuesit Tanë",
+        f1_name:"Ana Silva", f1_role:"Bashkë‑themeluese & Drejtuese Ekzekutive", f1_bio:"Ana është udhëtuese e pasionuar...", f1_alt:"Foto e Ana Silva",
+        f2_name:"Marko Dervishi", f2_role:"Bashkë‑themelues & CTO", f2_bio:"Marko krijon mjetet...", f2_alt:"Foto e Marko Dervishi",
+        f3_name:"Elira Kola", f3_role:"Bashkë‑themeluese & Drejtore e Përvojave", f3_bio:"Elira kuruar itinerare unike...", f3_alt:"Foto e Elira Kola",
+        timelineTitle:"Udhëtimi Ynë", milestone1:"Kompania u themelua nga udhëtarë pasionantë.", milestone2:"Lançoi aplikacionin e parë për ture të udhëzuara.", milestone3:"Shërbimet u zgjeruan në mbarë botën.",
+        testimonialsTitle:"Çfarë Thonë Udhëtarët Tanë",
+         testimonial1:"Eksperienca të mahnitshme, shumë rekomandohet!",
+        testimonial2:"Agjencia më e mirë e udhëtimeve që kemi përdorur ndonjëherë!",
+        testimonial3:"Udhëtime me të vërtetë të paharrueshme me guida fantastike!",
+        faqTitle:"Pyetjet e Shpeshta", faqQ1:"Cila është politika e rimbursimit?", faqA1:"Ofrim rimbursimi të plotë nëse anuloni 7 ditë përpara udhëtimit.",
+        faqQ2:"A ofroni sigurim udhëtimi?", faqA2:"Po, ne ofrojmë paketa sigurimi opsionale për të gjitha udhëtimet."
     }
 };
 
@@ -131,3 +159,32 @@ function showDestinations() {
     }
 
 }
+
+
+
+// FAQ Toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const faqButtons = document.querySelectorAll('.faq-question');
+
+    faqButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                answer.style.display = 'block';
+            }
+        });
+    });
+});
+
+// Timeline fade in
+const timelineItems = document.querySelectorAll('.timeline-item');
+timelineItems.forEach(item => { item.style.opacity = 0; item.style.transform = 'translateY(30px)'; });
+window.addEventListener('scroll', ()=>{
+    timelineItems.forEach(item=>{
+        const rect = item.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 50){ item.style.transition='all 0.6s ease-out'; item.style.opacity=1; item.style.transform='translateY(0)'; }
+    });
+});
+

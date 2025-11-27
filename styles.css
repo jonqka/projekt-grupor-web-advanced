@@ -346,3 +346,11 @@ h1, h2, h3,
   font-weight: 400;
   line-height: 1.15;
 }
+
+footer {
+    background: var(--surface);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 1px solid var(--border);
+}

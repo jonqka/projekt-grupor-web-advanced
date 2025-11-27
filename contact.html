@@ -6,13 +6,11 @@
     <title>Explore the World | Contact</title>
     <meta name="description" content="Contact Explore the World — available in English and Albanian">
 
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="contact.css">
-    
 </head>
 <body>
 
@@ -34,7 +32,6 @@
         </div>
     </header>
 
-        
     <section class="contact-section" id="contact">
         <h2 data-translate="contactTitle">Get in Touch</h2>
         <p class="contact-subtitle" data-translate="contactSubtitle">
@@ -42,7 +39,6 @@
         </p>
 
         <div class="contact-container">
-      
             <form class="contact-form" onsubmit="sendMessage(event)">
                 <label for="name" data-translate="contactNameLabel">Your Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -56,14 +52,22 @@
                 <button type="submit" data-translate="contactButton">Send Message</button>
             </form>
 
-       
             <div class="contact-info">
                 <h3 data-translate="contactInfoTitle">Contact Information</h3>
                 <p><strong>Email:</strong> info@exploretheworld.com</p>
 
-                
                 <p><strong data-translate="contactAddressLabel">Address:</strong></p>
                 <ul class="contact-address" data-translate="contactAddress"></ul>
+
+                <!-- Working hours -->
+                <div class="working-hours">
+                    <h4 data-translate="workingHoursTitle">Working Hours</h4>
+                    <ul class="hours-list">
+                        <li>Monday–Friday: 09:00–18:00</li>
+                        <li>Saturday: 10:00–14:00</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
 
                 <!-- Map block: Tirana, Albania -->
                 <h4 class="map-title" data-translate="contactMapTitle">Our Location</h4>
@@ -78,10 +82,48 @@
                         aria-label="Map showing Tirana, Albania"
                     ></iframe>
                 </div>
-            </div>
-        </div>
-    </section>
 
-        <script src="contact.js"></script>
+                <!-- FAQ accordion placed under map -->
+              <!-- FAQ Section -->
+<section class="faq-section">
+    <h3 data-translate="faqTitle">Frequently Asked Questions</h3>
+
+    <div class="faq-item">
+        <button class="faq-question" data-translate="faqQ1">How can I book a trip?</button>
+        <div class="faq-answer" data-translate="faqA1">
+            You can book a trip by contacting us directly or visiting the destinations page.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" data-translate="faqQ2">How long does a response take?</button>
+        <div class="faq-answer" data-translate="faqA2">
+            Our team usually responds within 24 hours.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" data-translate="faqQ3">Do you help with visas?</button>
+        <div class="faq-answer" data-translate="faqA3">
+            Yes, we offer assistance with travel documents for selected destinations.
+        </div>
+    </div>
+</section>
+    </div> 
+    </div> 
+</section> 
+
+
+    
+    <footer>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+        <p data-translate="copyright">© 2025 Explore the World. All rights reserved.</p>
+    </footer>
+
+    <script src="contact.js"></script>
 </body>
 </html>

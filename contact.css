@@ -334,5 +334,66 @@ h1, h2, h3,
     display: none;
 }
 
+footer {
+    background: var(--surface);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 1px solid var(--border);
+}
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
 
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: transparent;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    border: 1px solid transparent;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(59,47,47,0.08);
+    background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+    color: var(--primary-dark);
+    border-color: var(--border);
+}
+
+/* Working hours */
+.working-hours {
+    margin-top: 1rem;
+    background: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.working-hours h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+.hours-list { list-style: none; padding-left: 0; margin: 0; color: var(--text-light); }
+.hours-list li { margin-bottom: 0.3rem; }
+
+/* FAQ Section */ .faq-section { margin-top: 2.5rem; background: white; padding: 1.5rem 2rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04); } .faq-section h3 { font-family: 'Instrument Serif', serif; font-size: 1.4rem; margin-bottom: 1rem; color: var(--primary); } .faq-item { margin-bottom: 1rem; } .faq-question { width: 100%; text-align: left; padding: 0.75rem 1rem; font-size: 1rem; border: none; background: var(--surface); border-radius: 8px; cursor: pointer; font-weight: 600; transition: background 0.2s ease; } .faq-question:hover { background: var(--border); } .faq-answer { max-height: 0; overflow: hidden; padding: 0 1rem; background: white; border-left: 3px solid var(--primary); transition: max-height 0.3s ease, padding 0.3s ease; } .faq-answer.open { padding: 1rem; max-height: 300px; }
+
+/* small responsive tweaks */
+@media (max-width: 768px) {
+    .social-icon { width: 40px; height: 40px; }
+}
