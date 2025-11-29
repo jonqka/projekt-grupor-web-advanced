@@ -1,4 +1,4 @@
-// Translations
+    // Translations
 const translations = {
     en: {
         siteTitle: "Explore the World",
@@ -183,6 +183,16 @@ const destinations = {
                 name: "Mount Fuji",
                 description: "Iconic snow-capped volcano and Japan's highest mountain.",
                 image: "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171"
+            },
+            {
+                name: "Hiroshima",
+                description: "Historic city known for its peace memorial and atomic bomb dome.",
+                image: "https://images.unsplash.com/photo-1719360569943-310d65648d37?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            },
+            {
+                name: "Nara",
+                description: "Ancient city famous for its deer park and historic temples.",
+                image: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=600"
             }
         ],
         al: [
@@ -205,6 +215,16 @@ const destinations = {
                 name: "Mali Fuji",
                 description: "Vullkani ikonik i mbuluar me borë dhe mali më i lartë i Japonisë.",
                 image: "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171"
+            },
+            {
+                name: "Hiroshima",
+                description: "Qytet historik i njohur për memorialin e paqes dhe kupolën e bombës atomike.",
+                image: "https://images.unsplash.com/photo-1719360569943-310d65648d37?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            },
+            {
+                name: "Nara",
+                description: "Qytet i lashtë i famshëm për parkun e drerëve dhe tempujt historikë.",
+                image: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=600"
             }
         ]
     },
@@ -229,6 +249,16 @@ const destinations = {
                 name: "Gjirokastër",
                 description: "Historic stone city with a magnificent Ottoman-era castle.",
                 image: "https://images.unsplash.com/photo-1630339858071-4e64cc76fb6c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
+            },
+            {
+                name: "Shkodër",
+                description: "Historic city with beautiful lake views and rich cultural heritage.",
+                image: "https://images.unsplash.com/photo-1697617699823-db682c588c2a?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            },
+            {
+                name: "Durrës",
+                description: "Ancient coastal city with Roman amphitheater and beautiful beaches.",
+                image: "https://images.unsplash.com/photo-1709900486330-2f7e1228bebd?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             }
         ],
         al: [
@@ -251,6 +281,16 @@ const destinations = {
                 name: "Gjirokastra",
                 description: "Qytet historik prej guri me një kështjellë madhështore nga epoka osmane.",
                 image: "https://images.unsplash.com/photo-1630339858071-4e64cc76fb6c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
+            },
+            {
+                name: "Shkodra",
+                description: "Qytet historik me pamje të bukura liqeni dhe trashëgimi kulturore të pasur.",
+                image: "https://images.unsplash.com/photo-1697617699823-db682c588c2a?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            },
+            {
+                name: "Durrësi",
+                description: "Qytet i lashtë bregdetar me amfiteatrin romak dhe plazhe të bukura.",
+                image: "https://images.unsplash.com/photo-1709900486330-2f7e1228bebd?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             }
         ]
     },
@@ -270,6 +310,21 @@ const destinations = {
                 name: "San Francisco",
                 description: "Beautiful bay city famous for the Golden Gate Bridge and cable cars.",
                 image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=600"
+            },
+            {
+                name: "Las Vegas",
+                description: "Entertainment capital with casinos, shows, and vibrant nightlife.",
+                image: "https://images.unsplash.com/photo-1583207884889-d79abf0d0aa3?q=80&w=1184&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            },
+            {
+                name: "Miami",
+                description: "Sunny city with beautiful beaches, art deco architecture, and Latin culture.",
+                image: "https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=600"
+            },
+            {
+                name: "Yellowstone",
+                description: "First national park with geysers, wildlife, and stunning landscapes.",
+                image: "https://images.unsplash.com/photo-1554748795-bb013b2fb701?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             }
         ],
         al: [
@@ -287,6 +342,21 @@ const destinations = {
                 name: "San Francisko",
                 description: "Qytet i bukur në gji të detit i famshëm për Urën Golden Gate dhe tramvajët.",
                 image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=600"
+            },
+            {
+                name: "Las Vegasi",
+                description: "Kryeqyteti i argëtimit me kazino, shfaqje dhe jetë nate të gjallë.",
+                image: "https://images.unsplash.com/photo-1583207884889-d79abf0d0aa3?q=80&w=1184&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            },
+            {
+                name: "Majami",
+                description: "Qytet diellor me plazhe të bukura, arkitekturë art deco dhe kulturë latine.",
+                image: "https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=600"
+            },
+            {
+                name: "Jelloustoun",
+                description: "Parku kombëtar i parë me gjezera, jetë të egër dhe peizazhe mahnitëse.",
+                image: "https://images.unsplash.com/photo-1554748795-bb013b2fb701?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             }
         ]
     }
